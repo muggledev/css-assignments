@@ -1,0 +1,235 @@
+/* hero section */
+
+.hero-wrapper {
+  position: relative;
+  height: 800px;
+  background-image: url("../assets/bookshelf.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-wrapper > .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 10px;
+  font-size: 1.25em;
+  letter-spacing: 8px;
+  opacity: 0.8;
+  color: lightgray;
+}
+
+.about-wrapper {
+  text-align: center;
+  padding: 60px;
+}
+
+.about-wrapper > .about-header > p:nth-of-type(1) {
+  font-style: italic;
+}
+
+.about-wrapper > .about-header > p:nth-of-type(2) {
+  text-align: justify;
+}
+
+.about-wrapper > .about-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 45px;
+  width: 100%;
+}
+
+.about-wrapper > .about-content-wrapper > .photo-wrapper {
+  margin: 25px;
+}
+
+/* accolades */
+
+.accolades-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkslategrey;
+  color: white;
+  height: 60px;
+}
+
+.accolades-wrapper > .accolade-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.accolades-wrapper > .accolade-item-wrapper > span {
+  color: lightgray;
+}
+
+/* portfolio section */
+
+.portfolio-wrapper > .portfolio-header-wrapper {
+  position: relative;
+  height: 700px;
+  background-image: url("../assets/office.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.portfolio-wrapper > .portfolio-header-wrapper > .portfolio-header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 10px;
+  font-size: 1.25em;
+  letter-spacing: 8px;
+  opacity: 0.8;
+  color: lightgray;
+}
+
+.portfolio-wrapper > .portfolio-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-wrapper > .portfolio-section-wrapper > .portfolio-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+/* contact section */
+
+.contact-wrapper > .contact-header-wrapper {
+  height: 700px;
+  background-image: url("../assets/phone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-wrapper > .contact-header-wrapper > .contact-header-content {
+  background-color: black;
+  padding: 10px;
+  font-size: 1.25em;
+  letter-spacing: 8px;
+  opacity: 0.8;
+  color: lightgray;
+}
+
+.contact-section-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+  width: 60%;
+  padding-left: 20px;
+}
+
+.right-column {
+  width: 40%;
+}
+
+.google-map-wrapper {
+  height: 300px;
+  width: fit-content;
+  border: #bdbdbd solid 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+  width: 90%;
+  resize: none;
+}
+
+button[type="submit"] {
+  background-color: rgb(161, 161, 161);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 60%;
+  margin: 0 auto;
+  transform: 0.3s ease-out;
+}
+
+button[type="submit"]:hover {
+  background-attachment: black;
+  transition: 0.3s ease-in;
+  transform: scale(0.95);
+}
+
+/* footer */
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 30px 50px;
+  font-size: 20px;
+}
+
+.social-media-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.return-link-wrapper a {
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-media-wrapper {
+  font-size: 35px;
+  transition: 0.2 ease-in;
+}
+
+.social-media-wrapper {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 10px;
+}
