@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Reservation Form</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <nav class="nav-bar center">
+      <a href="../index.html">Home</a>
+      <a href="./pages/webform.html">Reservation Form</a>
+    </nav>
+    <div class="container1">
+      <header class="center">
+        <h2>Come Stay in the beautiful Sanpete Valley</h2>
+      </header>
+      <div class="hero-image-center">
+        <img src="../images/sanpete-logo.jpeg" alt="Sanpete Logo" />
+      </div>
+      <div class="image-center">
+        <img
+          src="../images/huntington.jpg"
+          alt="Huntington Reservoir"
+          class="featured-img"
+        />
+      </div>
+    </div>
+
+    <form>
+      <div class="container1">
+        <h3>Hotel Options</h3>
+        <div class="radio-buttons">
+          <div class="radio-option">
+            <input name="hotel" id="track89" type="radio" value="track89" />
+            <label for="track89">Track 89 Train Car Hotel</label>
+          </div>
+
+          <div class="radio-option">
+            <input
+              name="hotel"
+              id="horseshoe-mountain-lodge"
+              type="radio"
+              value="horseshoe-mountain-lodge"
+            />
+            <label for="horseshoe-mountain-lodge"
+              >Horseshoe Mountain Lodge Hotel</label
+            >
+          </div>
+
+          <div class="radio-option">
+            <input
+              name="hotel"
+              id="skyline-motel"
+              type="radio"
+              value="skyline-motel"
+            />
+            <label for="skyline-motel">Skyline Motel</label>
+          </div>
+        </div>
+
+        <div class="images center">
+          <img src="../images/Track89.webp" alt="track89" class="hotel-img" />
+          <img
+            src="../images/horseshoe-mtn-lodge.png"
+            alt="horseshoe-mountain-lodge"
+            class="hotel-img"
+          />
+          <img
+            src="../images/sklyine-motel.jpg"
+            alt="skyline-motel"
+            class="hotel-img"
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="first-name">First Name (required):</label>
+        <input
+          id="first-name"
+          name="first-name"
+          type="text"
+          placeholder="first-name"
+          required
+        /><br />
+      </div>
+
+      <div class="form-row">
+        <label for="last-name">Last Name (required):</label>
+        <input
+          id="last-name"
+          name="last-name"
+          type="text"
+          placeholder="last-name"
+          required
+        /><br />
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email (required):</label>
+        <input
+          id="email"
+          name="email"
+          type="text"
+          placeholder="email"
+          required
+        /><br />
+      </div>
+
+      <div class="form-row">
+        <label for="phone-number">Phone Number (required):</label>
+        <input
+          id="phone-number"
+          name="phone-number"
+          type="text"
+          placeholder="phone-number"
+          required
+        /><br />
+      </div>
+
+      <div class="form-row">
+        <label for="address">Address:</label>
+        <input id="address" name="address" type="text" placeholder="address" />
+      </div>
+
+      <div class="booking-row">
+        <div class="room-choice">
+          <select name="room-choice">
+            <option value="">Choose a room</option>
+            <option value="single-king-bed">1 King Bed</option>
+            <option value="double-queens">2 Queen Beds</option>
+            <option value="family-suite">Family Suite</option>
+          </select>
+        </div>
+
+        <div class="arrival-field">
+          <label for="arrival">Arrival Date</label>
+          <input id="arrival" name="date" type="date" />
+        </div>
+
+        <div class="departure-field">
+          <label for="departure">Departure Date</label>
+          <input id="departure" name="date" type="date" />
+        </div>
+      </div>
+
+      <div class="amenities-field">
+        <h4>Choose your amenities:</h4>
+        <div class="amenity">
+          <input
+            type="checkbox"
+            id="flat-screen-tv"
+            name="amenities"
+            value="flat-screen-tv"
+          />
+          <label for="flat-screen-tv">Flat Screen TV (optional)</label>
+        </div>
+        <div class="amenity">
+          <input
+            type="checkbox"
+            id="mini-fridge-and-bar"
+            name="amenities"
+            value="mini-fridge-and-bar"
+          />
+          <label for="mini-fridge-and-bar"
+            >Mini Fridge & Mini Bar (optional)</label
+          >
+        </div>
+        <div class="amenity">
+          <input
+            type="checkbox"
+            id="room-service-breakfast"
+            name="amenities"
+            value="room-service-breakfast"
+          />
+          <label for="room-service-breakfast"
+            >Room Service Breakfast (optional)</label
+          >
+        </div>
+      </div>
+
+      <div class="additional-requests">
+        <h4>Additional Requests</h4>
+        <textarea name="requests" rows="8" cols="50"></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <div class="footer">
+      <footer class="center">
+        <p>Contact us:</p>
+        <div class="contact-info">
+          <div>446 W Main</div>
+          <div>Fairspring City, UT 34876</div>
+          <div>859-372-0804</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
