@@ -96,6 +96,19 @@ h2 {
   min-width: 400px;
 }
 
+.form-link {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-link a {
+  color: #178430;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
 .footer {
   text-align: center;
   margin-bottom: 40px;
